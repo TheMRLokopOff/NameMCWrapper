@@ -15,7 +15,7 @@ export abstract class DataParser {
 
     protected parseSkins(data: string): ISkin[] {
         const $ = cheerio.load(data);
-
+/// ты гей
         const skins = $("div.card-body.position-relative.text-center.checkered.p-1")
             .map((index, card) => {
                 const $ = cheerio.load(card);
